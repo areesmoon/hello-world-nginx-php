@@ -9,7 +9,7 @@ services:
       - ./src:/var/www/html
       - ./default.conf:/etc/nginx/conf.d/default.conf
     links:
-      - php-fpm
+      - hello-world-nginx-php-fpm
   hello-world-nginx-php-fpm:
     image: php:fpm-alpine
     volumes:
